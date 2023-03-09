@@ -23,7 +23,8 @@ namespace LeClassi
 
             person1.getValues();
 
-            //interpolazione
+            person1.Universita = 28;
+            Console.WriteLine(person1.Bonus);
 
         }
 
@@ -50,7 +51,55 @@ namespace LeClassi
             public string Surname { get { return _surname; } }
             public string FullName { get { return _name + " " + _surname; } }
             public bool IsAdult { get { return _isAdult; } }
-            // public int Premio { get { return _premio; } }
+
+            public decimal PilComune
+            {
+                get { return _pilComune; }
+                set
+                {
+                    if (value < 1000)
+                    { _pilComune = value; }
+                }
+            }
+
+            public int Maturita
+            {
+                get => _maturita;
+                set
+                {
+                    if (_maturita >= 90)
+                    {
+                        _punteggio += 7;
+                    }
+                    _maturita = value;
+                }
+            }
+
+            public int Universita
+            {
+                get => _universita;
+                set
+                {
+                    if (_universita >= 28)
+                    {
+                        _punteggio += 6;
+
+                    }
+                    _universita = value;
+                }
+            }
+
+            public decimal Bonus
+            {
+                get
+                {
+                    SetBonus();
+                    return _bonus;
+                }
+                set => _bonus = value;
+            }
+
+            public bool FedinaPenale { get => _fedinaPenale; set => _fedinaPenale = value; }
 
             public Person(
 
@@ -72,13 +121,14 @@ namespace LeClassi
 
                 // variabili per il BONUS 
                 _age = Age;
-                _maturita = Maturita;
-                _universita = Universita;
-                _fedinaPenale = FedinaPenale;
+                this.Maturita = Maturita;
+                this.Universita = Universita;
+                this.FedinaPenale = FedinaPenale;
                 _figli = Figli;
                 _militare = Militare;
                 _debiti = Debiti;
                 _pilComune = PilComune;
+                this.PilComune = PilComune;
 
 
                 counter++;
@@ -96,7 +146,7 @@ namespace LeClassi
                 //);
 
                 Console.WriteLine($"Age:{_age}");
-                Console.WriteLine($"Maturita:{_maturita}");
+                Console.WriteLine($"Maturita:{Maturita}");
                 Console.WriteLine($"Debiti:{_debiti}");
             }
             public int getCounter()
@@ -115,6 +165,11 @@ namespace LeClassi
                     _isAdult = false;
                 }
             }
+            private void SetBonus()
+            {
+                // valuta se il cittadino ha il punteggio minimo
+                // Setta il valore del bonus 
+            }
 
             private void CalcolaBonus()
             {
@@ -125,7 +180,7 @@ namespace LeClassi
                 */
 
 
-                if (_maturita >= 90)
+                if (Maturita >= 90)
                 {
                     _punteggio += 7;
                 }
