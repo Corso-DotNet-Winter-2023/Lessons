@@ -94,8 +94,7 @@ namespace LeClassi
                 //$"FedinaPenale:{_fedinaPenale}" +
                 //$"Debiti: {_debiti}"
                 //);
-                Console.WriteLine($"Nome:{_name}");
-                Console.WriteLine($"Cognome:{_surname}");
+
                 Console.WriteLine($"Age:{_age}");
                 Console.WriteLine($"Maturita:{_maturita}");
                 Console.WriteLine($"Debiti:{_debiti}");
