@@ -1,6 +1,6 @@
 ﻿
 using System;
-using static LeClassi.Program;
+
 
 namespace LeClassi
 {
@@ -27,8 +27,6 @@ namespace LeClassi
             Console.WriteLine(person1.Bonus);
 
         }
-
-
         internal class Person
         {
             static int counter = 0;

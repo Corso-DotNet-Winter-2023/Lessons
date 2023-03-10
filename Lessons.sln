@@ -5,7 +5,9 @@ VisualStudioVersion = 17.3.32901.215
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LeClassi", "LeClassi.csproj", "{DCD05EF4-E424-4B7C-A43F-C8F80024FE95}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Polimorfismo", "Polimorfismo\Polimorfismo.csproj", "{863330E4-B257-42D9-A7C9-0197BD358C00}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Polimorfismo", "Polimorfismo\Polimorfismo.csproj", "{863330E4-B257-42D9-A7C9-0197BD358C00}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Associations", "Associations\Associations.csproj", "{B5D6DF26-EC43-4A37-93BC-E6DBC21CACA3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{863330E4-B257-42D9-A7C9-0197BD358C00}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{863330E4-B257-42D9-A7C9-0197BD358C00}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{863330E4-B257-42D9-A7C9-0197BD358C00}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B5D6DF26-EC43-4A37-93BC-E6DBC21CACA3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B5D6DF26-EC43-4A37-93BC-E6DBC21CACA3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B5D6DF26-EC43-4A37-93BC-E6DBC21CACA3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B5D6DF26-EC43-4A37-93BC-E6DBC21CACA3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
